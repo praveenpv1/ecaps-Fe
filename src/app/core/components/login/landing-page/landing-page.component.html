@@ -1,0 +1,99 @@
+<div nz-row>
+  <h1 class="koppr-dark-green text-center">
+    Welcome to Koppr
+  </h1>
+  <br /><br />
+  <div nz-col nzSm="24" nzMd="24" nzLg="12" nzXl="12">
+    <div nz-row>
+      <div nz-col nzSm="24" nzMd="24" nzLg="5" nzXl="5"></div>
+      <div nz-col nzSm="24" nzMd="24" nzLg="14" nzXl="14" class="card-div">
+        <mat-card class="login-card">
+          <div class="div-center">
+            <h2 class="text-center">
+              Employee  
+            </h2>
+            <nz-avatar
+              [nzSize]="85"
+              nzIcon="user"
+              class="employee-avatar"
+            ></nz-avatar>
+            <br />
+
+            <button
+              nz-button 
+              nzSize="size"
+              nzType="primary"
+              nzShape="round"
+              (click)="goToUrl()"
+              class="margin-5px"
+            >
+            &nbsp;&nbsp;&nbsp;&nbsp;Sign In&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div nz-col nzSm="24" nzMd="24" nzLg="5" nzXl="5"></div>
+    </div>
+  </div>
+
+  <div nz-col nzSm="24" nzMd="24" nzLg="12" nzXl="12">
+    <div nz-row>
+      <div nz-col nzSm="24" nzMd="24" nzLg="5" nzXl="5"></div>
+      <div nz-col nzSm="24" nzMd="24" nzLg="14" nzXl="14" class="card-div">
+        <mat-card class="login-card">
+          <div class="div-center">
+            <h2 class="text-center">
+              HR/Company Admin
+            </h2>
+            <nz-avatar
+              [nzSize]="85"
+              nzIcon="user"
+              class="company-avatar"
+            ></nz-avatar>
+            <br />
+            <button
+              class="margin-5px"
+              nz-button
+              nzShape="round"
+              nzType="primary"
+              nzSize="size"
+              [routerLink]="['/', 'signin']"
+            >
+            &nbsp;&nbsp;&nbsp;&nbsp;Sign In&nbsp;&nbsp;&nbsp;&nbsp;
+            </button> 
+            <button
+              class="btn-sign-up margin-5px"
+              nz-button
+              nzType="default"
+              nzSize="size"
+              nzShape="round"
+              [routerLink]="['/', 'signup']"
+            >
+            &nbsp;&nbsp;&nbsp;&nbsp;Sign Up&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div nz-col nzSm="24" nzMd="24" nzLg="5" nzXl="5"></div>
+    </div>
+  </div>
+</div>
+<br />
+<br />
+<br />
+<div nz-row>
+  <p class="text-center">
+    Need help with your Koppr Account? Get in touch
+  </p>
+  <div nz-col nzSm="12" nzMd="12" nzLg="12" nzXl="12">
+    <h4 class="koppr-light-green text-center">
+      <a href="tel:+918879600206">(+91) 8879600206</a>
+    </h4>
+  </div>
+  <div nz-col nzSm="12" nzMd="12" nzLg="12" nzXl="12">
+    <h4 class="koppr-light-green text-center">
+      <a href="mailto:care@koppr.in">care@koppr.in</a>
+    </h4>
+  </div>
+  <br><br><br>
+</div>
