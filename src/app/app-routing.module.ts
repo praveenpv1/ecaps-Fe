@@ -173,6 +173,12 @@ const routes: Routes = [
   },
   {
     // path: 'sales/accounts',
+    path: "signin",
+    component: SignInComponent,
+    data: { menuType: menuType.siginin }
+  },
+  {
+    // path: 'sales/accounts',
     path: "signup",
     component: SignUpComponent,
     data: { menuType: menuType.siginin }
