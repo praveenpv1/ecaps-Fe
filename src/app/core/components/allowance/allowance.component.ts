@@ -127,7 +127,7 @@ export class AllowanceComponent implements OnInit, OnDestroy {
 
   renderCards(): void {
     this.balanceCards.push({
-      title: "Koppr Account Balance",
+      title: "Enviar Account Balance",
       text: this.companyBalance,
       icon: "more",
       bgClass: "koppr-account-balance",

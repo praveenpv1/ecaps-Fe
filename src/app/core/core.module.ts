@@ -115,6 +115,15 @@ import { DatePipe, CurrencyPipe } from "@angular/common";
 import { NgxSpinnerModule } from "ngx-spinner";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 import { TopupApprovalComponent } from "./components/company/topup-approval.component";
+import { DistributorComponent } from './components/distributor/distributor.component';
+import { SubDistributorComponent } from './components/sub-distributor/sub-distributor.component';
+import { RetailerComponent } from './components/retailer/retailer.component';
+import { LedgersComponent } from './components/ledgers/ledgers.component';
+import { EarningsComponent } from './components/earnings/earnings.component';
+import { MonthlyTransactionsComponent } from './components/monthly-transactions/monthly-transactions.component';
+import { WalletLoadRequestComponent } from './components/wallet-load-request/wallet-load-request.component';
+import { WalletTopUpComponent } from './components/wallet-top-up/wallet-top-up.component';
+import { PaymentsComponent } from './components/payments/payments.component';
 
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
@@ -237,7 +246,16 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     FilterPipeByField,
     DepositComponent,
     TopupApprovalComponent,
-    CompanyListComponent
+    CompanyListComponent,
+    DistributorComponent,
+    SubDistributorComponent,
+    RetailerComponent,
+    LedgersComponent,
+    EarningsComponent,
+    MonthlyTransactionsComponent,
+    WalletLoadRequestComponent,
+    WalletTopUpComponent,
+    PaymentsComponent
   ],
   exports: [
     PlaceholderComponent,

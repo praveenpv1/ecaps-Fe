@@ -5,7 +5,7 @@
     <div nz-row>
       <div nz-col nzXs="2" nzSm="14" nzMd="14" nzLg="14" nzXl="14">
         <div class="logo">
-          <img src="assets/images/icons/koppr-logo.svg" class="logo" />
+          <img src="assets/images/enviar-logo.png" class="logo" />
         </div>
       </div>
 
@@ -20,7 +20,7 @@
       >
         <ul *ngIf="!isAdmin()" nzMode="inline" class="my-account-top-section">
           <span class="dark-brown">
-            My Koppr Balance &nbsp; <b>{{ companyBalance | currency: "₹" }}</b
+            My Enviar Balance &nbsp; <b>{{ companyBalance | currency: "₹" }}</b
             >&nbsp;
             <img
               src="assets/images/rupay-add.png"
@@ -65,7 +65,7 @@
 
                       <li
                         nz-submenu
-                        nzTitle="My Koppr Account"
+                        nzTitle="My Enviar Account"
                         *ngIf="!isAdmin()"
                       >
                         <ul>
@@ -119,28 +119,40 @@
         <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'dashboard']">
           <i nz-icon nzType="dashboard" nzTheme="outline"></i> Dashboard
         </li>
-        <li
-          nz-menu-item
-          nzOpen
-          nzIcon="user"
-          [routerLink]="['/', 'employee', 'list']"
-        >
-          <i nz-icon nzType="team" nzTheme="outline"></i> Employees
+        <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'distributor']" >
+          <i nz-icon nzType="global" nzTheme="outline"></i> Distributor
         </li>
-        <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'salary']">
-          <i nz-icon nzType="fund" nzTheme="outline"></i> Salary Disbursement
+        <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'sub-distributor']">
+          <i nz-icon nzType="deployment-unit" nzTheme="outline"></i> Sub-Distributor
         </li>
-        <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'allowance']">
-          <i nz-icon nzType="credit-card" nzTheme="outline"></i> Allowance
-          Disbursement
+        <li nz-menu-item nzOpen nzIcon="user" [routerLink]="['/', 'retailer']">
+          <i nz-icon nzType="user" nzTheme="outline"></i> Retailer
         </li>
-        <li nz-menu-item nzOpen [routerLink]="['/', 'claims']">
-          <i nz-icon nzType="solution" nzTheme="outline"></i> Claims
+        <li nz-menu-item nzOpen [routerLink]="['/', 'ledgers']">
+          <i nz-icon nzType="file" nzTheme="outline"></i> Ledgers
         </li>
-        <li nz-submenu nzOpen nzIcon="user" nzTitle="My Koppr Account">
+        <li nz-menu-item nzOpen [routerLink]="['/', 'earnings']">
+          <i nz-icon nzType="dollar" nzTheme="outline"></i> Earnings
+        </li>
+        <li nz-menu-item nzOpen [routerLink]="['/', 'monthly-transactions']">
+          <i nz-icon nzType="calendar" nzTheme="outline"></i> Monthly Transactions
+        </li>
+        <li nz-menu-item nzOpen [routerLink]="['/', 'wallet-load-request']">
+          <i nz-icon nzType="interaction" nzTheme="outline"></i> Wallet Load Request
+        </li>
+        <li nz-menu-item nzOpen [routerLink]="['/', 'wallet-top-up']">
+          <img
+                src="assets/images/rupay-add.png"
+                style="width: 20px;"
+              />&nbsp;&nbsp; Wallet Top Up
+        </li>
+        <li nz-menu-item nzOpen [routerLink]="['/', 'payments']">
+          <i nz-icon nzType="swap" nzTheme="outline"></i> Payments
+        </li>
+        <!-- <li nz-submenu nzOpen nzIcon="user" nzTitle="My Enviar Account">
           <ul>
             <li nz-menu-item (click)="gotoAccountDetails()" class="dark-brown">
-              <i nz-icon nzType="setting" nzTheme="outline"></i>Account Settings
+              <i nz-icon nzType="setting" nzTheme="outline"></i>
             </li>
             <li
               nz-menu-item
@@ -153,9 +165,9 @@
               />&nbsp;&nbsp;Top Up Balance
             </li>
           </ul>
-        </li>
+        </li> -->
 
-        <li
+        <!-- <li
           nz-menu-item
           nzOpen
           nzIcon="user"
@@ -163,7 +175,7 @@
           *ngIf="isRole('admin')"
         >
           <i nz-icon nzType="fund"></i> Company
-        </li>
+        </li> -->
       </ul>
     </nz-sider>
 

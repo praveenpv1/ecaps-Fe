@@ -50,7 +50,7 @@ export class EmployeeAddTypeSelectionComponent implements OnInit {
 
   balanceCards: InfoCards[] = [
     {
-      title: "Koppr Account Balance",
+      title: "Enviar Account Balance",
       text: "7,43,989.00",
       icon: "more",
       bg: "",

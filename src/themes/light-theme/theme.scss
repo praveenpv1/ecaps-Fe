@@ -185,10 +185,10 @@ p {
   border-radius: 50%;
 }
 
-.koppr-account-balance {
-  background: linear-gradient(to bottom, #1e4758, #258189) !important;
+.koppr-account-balance { 
+  background: linear-gradient(to bottom, #2193b0, #6dd5ed) !important; 
   color: #ffffff !important;
-  border: #27878e !important;
+  border: #2193b0 !important;
 }
 
 .koppr-account-balance h1 {
@@ -222,9 +222,9 @@ p {
 
 .ant-layout-header {
   margin-bottom: 15px;
-  -webkit-box-shadow: 2px 3px 8px -1px rgba(209, 255, 244, 1);
-  -moz-box-shadow: 2px 3px 8px -1px rgba(209, 255, 244, 1);
-  box-shadow: 2px 3px 8px -1px rgba(209, 255, 244, 1);
+  -webkit-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
+  -moz-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
+  box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
 }
 
 .header-menu {
@@ -236,9 +236,9 @@ p {
 }
 
 .sider-menu {
-  -webkit-box-shadow: 2px 3px 8px -1px rgba(208, 255, 254, 1);
-  -moz-box-shadow: 2px 3px 8px -1px rgba(208, 255, 254, 1);
-  box-shadow: 2px 3px 8px -1px rgba(208, 255, 254, 1) !important;
+  -webkit-box-shadow: 2px 3px 8px -1px rgb(65, 106, 168, 1);
+  -moz-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
+  box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1) !important;
   margin-top: -15px !important;
 }
 
@@ -254,7 +254,7 @@ p {
   box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   margin: 10px !important;
   margin-left: 0px !important;
-  border: 1px #77c7b4 solid !important;
+  border: 1px #2193b0 solid !important;
   outline: none !important;
 }
 .warning-card {
