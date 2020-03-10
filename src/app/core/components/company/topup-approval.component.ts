@@ -162,8 +162,8 @@ export class TopupApprovalComponent implements OnInit, OnDestroy {
       key: environment.razorKey,
       amount: this.validateOnlineForm.controls["onlineAmount"].value * 100, // amount should be in paise format to display Rs 1255 without decimal point
       currency: "INR",
-      name: "Koppr", // company name or product name
-      description: "Koppr", // product description
+      name: "Enviar", // company name or product name
+      description: "Enviar", // product description
       image: "assets/images/icons/koppr-logo.svg", // company logo or product image
       //order_id: "10000", // order_id created by you in backend
       modal: {

@@ -212,7 +212,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.infoCards = [];
     this.balanceCards.push(
       {
-        title: "Koppr Account Balance",
+        title: "Enviar Account Balance",
         text: this.currencyPipe.transform(this.companyBalance, "₹"),
         icon: "more",
 

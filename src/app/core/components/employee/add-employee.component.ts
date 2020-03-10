@@ -101,7 +101,7 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
       //this.tabs.push("Contact Details", "Salary Details", "Employee KYC");
       this.tabs.push("Contact Details");
       this.tabs.push("KYC Details");
-      this.tabs.push("Koppr Account Details");
+      this.tabs.push("Enviar Account Details");
       //this.tabs.push("Roles");
 
       //load in form control

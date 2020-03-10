@@ -61,9 +61,18 @@ import { SignInComponent } from "@app/core/components/login/sign-in/signin.compo
 import { LandingPageComponent } from "@app/core/components/login/landing-page/landing-page.component";
 import { KopprSignUpComponent } from "@app/core/components/login/sign-up/signup.component";
 import { CompanyListComponent } from "./core/components/company/companylist.component";
-
 import { DepositComponent } from "./core/components/company/deposit.component";
 import { TopupApprovalComponent } from "./core/components/company/topup-approval.component";
+
+import { DistributorComponent } from "@app/core/components/distributor/distributor.component";
+import { SubDistributorComponent } from "@app/core/components/sub-distributor/sub-distributor.component";
+import { RetailerComponent } from "@app/core/components/retailer/retailer.component";
+import { LedgersComponent } from "@app/core/components/ledgers/ledgers.component";
+import { EarningsComponent } from "@app/core/components/earnings/earnings.component";
+import { MonthlyTransactionsComponent } from "@app/core/components/monthly-transactions/monthly-transactions.component";
+import { WalletLoadRequestComponent } from "@app/core/components/wallet-load-request/wallet-load-request.component";
+import { WalletTopUpComponent } from "@app/core/components/wallet-top-up/wallet-top-up.component";
+import { PaymentsComponent } from "@app/core/components/payments/payments.component";
 
 export enum menuType {
   initialSetup = 1,
@@ -93,15 +102,56 @@ const routes: Routes = [
   //
   {
     // path: 'sales/accounts',
-    path: "signin",
-    component: SignInComponent,
-    data: { menuType: 4 }
+    path: "distributor",
+    component: DistributorComponent,
+    data: { menuType: menuType.normal }
   },
-
   {
-    path: "signin/:verify",
-    component: SignInComponent,
-    data: { menuType: 4 }
+    // path: 'sales/accounts',
+    path: "sub-distributor",
+    component: SubDistributorComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "retailer",
+    component: RetailerComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "ledgers",
+    component: LedgersComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "earnings",
+    component: EarningsComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "monthly-transactions",
+    component: MonthlyTransactionsComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "wallet-load-request",
+    component: WalletLoadRequestComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "wallet-top-up",
+    component: WalletTopUpComponent,
+    data: { menuType: menuType.normal }
+  }, 
+  {
+    path: "payments",
+    component: PaymentsComponent,
+    data: { menuType: menuType.normal }
   },
   {
     // path: 'sales/accounts',

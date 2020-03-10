@@ -216,7 +216,7 @@ export class ClaimComponent implements OnInit, OnDestroy {
     ];
 
     this.balanceCards.push(...this.mockCards, {
-      title: "Koppr Account Balance",
+      title: "Enviar Account Balance",
       text: this.currencyPipe.transform(this.companyBalance, "₹"),
       icon: "more",
       bgClass: "koppr-account-balance",
