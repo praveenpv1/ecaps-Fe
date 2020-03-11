@@ -222,7 +222,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         type: InfoType.amount
       },
       {
-        title: "Salaries Disbursed",
+        title: "Money Transferred",
         text: this.currencyPipe.transform(
           this.getTotalSalary(this.expenseData),
           "₹"
@@ -234,7 +234,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         type: InfoType.amount
       },
       {
-        title: "Claims Settled",
+        title: "Earnings",
         text: this.currencyPipe.transform(this.settledClaims, "₹"),
         icon: "more",
         bgClass: "white-gradient-card",
@@ -243,7 +243,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         type: InfoType.amount
       },
       {
-        title: "Allowance Disbursed",
+        title: "Ledgers",
         text: this.currencyPipe.transform(
           this.getTotalSalary(this.allowanceData),
           "₹"
@@ -258,7 +258,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
     this.infoCards = [
       {
-        title: "Next Salary Disbursement in",
+        title: "Auto Wallet Loading in",
         text: SalaryIn(),
         icon: "more",
         bgClass: "white-gradient-card",
@@ -268,8 +268,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
         iconImg: "assets/images/calendar.svg"
       },
       {
-        title: "Pending Claims",
-        text: this.pendingClaims + " Claim(s)",
+        title: "Pending Transactions",
+        text: this.pendingClaims + "Txns",
         icon: "more",
         bgClass: "white-gradient-card",
         desc: "VIEW DETAILS",

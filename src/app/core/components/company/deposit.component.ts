@@ -34,7 +34,7 @@ import { environment } from "@env/environment";
   providers: [WindowRefService]
 })
 export class DepositComponent implements OnInit, OnDestroy {
-  tabs = ["Online Top Up", "Manual Top Up", "Transactions"];
+  tabs = ["Online Top Up","Transactions"];
   validateForm: FormGroup;
   validateOnlineForm: FormGroup;
   selectedTransType = "neft";

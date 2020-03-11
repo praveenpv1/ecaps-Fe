@@ -56,8 +56,7 @@
                     <ul>
                       <li
                         *ngIf="!isAdmin()"
-                        nz-menu-item
-                        [routerLink]="['/', 'employee', 'list']"
+                        nz-menu-item 
                       >
                         <i nz-icon nzType="team" nzTheme="outline"></i>Manage
                         Users
@@ -69,10 +68,10 @@
                         *ngIf="!isAdmin()"
                       >
                         <ul>
+                          <!-- (click)="gotoAccountDetails()" function for acct settings-->
                           <li
                             nz-menu-item
-                            class="dark-brown"
-                            (click)="gotoAccountDetails()"
+                            class="dark-brown" 
                           >
                             <i nz-icon nzType="setting" nzTheme="outline"></i
                             >Account Settings
@@ -80,7 +79,6 @@
                           <li
                             nz-menu-item
                             class="dark-brown"
-                            [routerLink]="['/', 'company', 'deposit']"
                           >
                             <img
                               src="assets/images/rupay-add.png"
@@ -140,7 +138,7 @@
         <li nz-menu-item nzOpen [routerLink]="['/', 'wallet-load-request']">
           <i nz-icon nzType="interaction" nzTheme="outline"></i> Wallet Load Request
         </li>
-        <li nz-menu-item nzOpen [routerLink]="['/', 'wallet-top-up']">
+        <li nz-menu-item nzOpen [routerLink]="['/', 'company', 'deposit']">
           <img
                 src="assets/images/rupay-add.png"
                 style="width: 20px;"
