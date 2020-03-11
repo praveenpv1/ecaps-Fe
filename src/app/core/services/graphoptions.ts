@@ -7,8 +7,8 @@ const commonGraphOptions = {
   responsive: true,
 
   tooltips: {
-    backgroundColor: "#f2a17e",
-    borderColor: "#000000",
+    backgroundColor: "#2a2265",
+    borderColor: "#2a2265",
     borderWidth: 1.5,
     displayColors: false,
     callbacks: {
@@ -70,15 +70,15 @@ const lineChartOptions: ChartOptions = {
       borderJoinStyle: "round"
     },
     point: {
-      borderColor: "#27878e"
+      borderColor: "#faa61a"
     }
   }
 };
 
 const lineChartColors: Color[] = [
   {
-    borderColor: "#77c7b4",
-    backgroundColor: "#77c7b4"
+    borderColor: "#faa61a",
+    backgroundColor: "#faa61a"
   }
 ];
 
@@ -98,7 +98,7 @@ const barChartOptions: ChartOptions = {
 
 const barChartColors: Color[] = [
   {
-    backgroundColor: "#77c7b4"
+    backgroundColor: "#faa61a"
   }
 ];
 
