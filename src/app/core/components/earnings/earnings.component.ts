@@ -59,7 +59,7 @@ interface InfoCards {
   templateUrl: './earnings.component.html',
   styleUrls: ['./earnings.component.scss']
 })
-export class EarningsComponent implements OnInit {
+export class EarningsComponent implements OnInit,OnDestroy {
   dateFormat = 'yyyy/MM/dd';
   monthFormat = 'yyyy/MM';;
   public barGraphOptions = barGraphOptions;
@@ -189,7 +189,7 @@ export class EarningsComponent implements OnInit {
       title: "Enviar Account Balance",
       text: this.companyBalance,
       icon: "more",
-      bgClass: "koppr-account-balance",
+      bgClass: "enviar-account-balance",
       desc: "TOP UP",
       routerLink: ["/", "company", "deposit"],
       type: InfoType.amount

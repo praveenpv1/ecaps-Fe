@@ -219,7 +219,7 @@ export class ClaimComponent implements OnInit, OnDestroy {
       title: "Enviar Account Balance",
       text: this.currencyPipe.transform(this.companyBalance, "₹"),
       icon: "more",
-      bgClass: "koppr-account-balance",
+      bgClass: "enviar-account-balance",
       desc: "TOP UP",
       routerLink: ["/", "company", "deposit"],
       type: InfoType.amount,
