@@ -216,7 +216,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         text: this.currencyPipe.transform(this.companyBalance, "₹"),
         icon: "more",
 
-        bgClass: "koppr-account-balance",
+        bgClass: "enviar-account-balance",
         desc: "TOP UP",
         routerLink: ["/", "company", "deposit"],
         type: InfoType.amount
