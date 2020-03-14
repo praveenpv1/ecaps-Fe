@@ -116,8 +116,11 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { NzTabsModule } from "ng-zorro-antd/tabs";
 import { TopupApprovalComponent } from "./components/company/topup-approval.component";
 import { DistributorComponent } from './components/distributor/distributor.component';
+import { AddDistributorComponent } from './components/distributor/add-distributor.component';
 import { SubDistributorComponent } from './components/sub-distributor/sub-distributor.component';
+import { AddSubDistributorComponent } from './components/sub-distributor/add-sub-distributor.component';
 import { RetailerComponent } from './components/retailer/retailer.component';
+import { AddRetailerComponent } from './components/retailer/add-retailer.component';
 import { LedgersComponent } from './components/ledgers/ledgers.component';
 import { EarningsComponent } from './components/earnings/earnings.component';
 import { MonthlyTransactionsComponent } from './components/monthly-transactions/monthly-transactions.component';
@@ -248,8 +251,11 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     TopupApprovalComponent,
     CompanyListComponent,
     DistributorComponent,
+    AddDistributorComponent,
     SubDistributorComponent,
+    AddSubDistributorComponent,
     RetailerComponent,
+    AddRetailerComponent,
     LedgersComponent,
     EarningsComponent,
     MonthlyTransactionsComponent,
@@ -309,7 +315,19 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
     AllowanceComponent,
     DepositComponent,
     TopupApprovalComponent,
-    CompanyListComponent
+    CompanyListComponent,
+    DistributorComponent,
+    AddDistributorComponent,
+    SubDistributorComponent,
+    AddSubDistributorComponent,
+    RetailerComponent,
+    AddRetailerComponent,
+    LedgersComponent,
+    EarningsComponent,
+    MonthlyTransactionsComponent,
+    WalletLoadRequestComponent,
+    WalletTopUpComponent,
+    PaymentsComponent
   ]
 })
 export class CoreModule {

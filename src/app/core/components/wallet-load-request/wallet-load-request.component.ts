@@ -183,7 +183,7 @@ export class WalletLoadRequestComponent implements OnInit,OnDestroy {
     this.mockCards = [
       {
         title: "Pending Requests",
-        text: this.pendingClaims + " claims",
+        text: this.pendingClaims + " requests",
         icon: "more",
         bgClass: "white-gradient-card",
         desc: "VIEW DETAILS",
@@ -193,7 +193,7 @@ export class WalletLoadRequestComponent implements OnInit,OnDestroy {
       },
       {
         title: "Approved Requests",
-        text: this.approvedCounts + " claims",
+        text: this.approvedCounts + " requests",
         icon: "more",
         bgClass: "white-gradient-card",
         desc: "VIEW DETAILS",
