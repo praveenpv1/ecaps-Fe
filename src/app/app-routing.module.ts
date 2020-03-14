@@ -1,10 +1,5 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-
-//
-// Auth libs
-//
-
 import { AuthGuard } from "auth";
 
 import { PlaceholderComponent } from "@app/core/components/placeholder/placeholder.component";
@@ -65,8 +60,11 @@ import { DepositComponent } from "./core/components/company/deposit.component";
 import { TopupApprovalComponent } from "./core/components/company/topup-approval.component";
 
 import { DistributorComponent } from "@app/core/components/distributor/distributor.component";
+import { AddDistributorComponent } from "@app/core/components/distributor/add-distributor.component";
 import { SubDistributorComponent } from "@app/core/components/sub-distributor/sub-distributor.component";
+import { AddSubDistributorComponent } from "@app/core/components/sub-distributor/add-sub-distributor.component";
 import { RetailerComponent } from "@app/core/components/retailer/retailer.component";
+import { AddRetailerComponent } from "@app/core/components/retailer/add-retailer.component";
 import { LedgersComponent } from "@app/core/components/ledgers/ledgers.component";
 import { EarningsComponent } from "@app/core/components/earnings/earnings.component";
 import { MonthlyTransactionsComponent } from "@app/core/components/monthly-transactions/monthly-transactions.component";
@@ -108,14 +106,32 @@ const routes: Routes = [
   },
   {
     // path: 'sales/accounts',
+    path: "distributor/add",
+    component: AddDistributorComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
     path: "sub-distributor",
     component: SubDistributorComponent,
     data: { menuType: menuType.normal }
   },
   {
     // path: 'sales/accounts',
+    path: "sub-distributor/add",
+    component: AddSubDistributorComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
     path: "retailer",
     component: RetailerComponent,
+    data: { menuType: menuType.normal }
+  },
+  {
+    // path: 'sales/accounts',
+    path: "retailer/add",
+    component: AddRetailerComponent,
     data: { menuType: menuType.normal }
   },
   {

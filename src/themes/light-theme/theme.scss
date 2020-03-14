@@ -186,7 +186,7 @@ p {
 }
 
 .enviar-account-balance { 
-  background: #2a2265 !important; 
+  background: linear-gradient(to bottom, #2a2265, #453E78) !important; 
   color: #ffffff !important;
   border: #2a2265 !important;
 }
@@ -202,8 +202,8 @@ p {
   font-weight: bold;
 }
 
-.enviar-account-balance i {
-  background-image: linear-gradient(321deg, #faa61a 36%, #faa61a 89%);
+.enviar-account-balance i { 
+  background-image: linear-gradient(321deg, #faa61a 36%, #fbbc53 89%);
   text-align: center;
   display: inline-block;
   font-size: 17px;
