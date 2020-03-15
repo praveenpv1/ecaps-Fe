@@ -1,5 +1,4 @@
 @import "~@angular/material/theming";
-
 @import "../fonts";
 @import "../icons";
 @import "../../../projects/utils/src/lib/angular-material/mat-variables";
@@ -247,7 +246,7 @@ p {
   padding-right: 5px !important;
 }
 
-.employer-card {
+.blue-border-card {
   border-radius: 6px !important;
   -webkit-box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
