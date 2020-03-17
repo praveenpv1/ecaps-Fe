@@ -12,28 +12,21 @@
   align-items: center;
   justify-content: center;
 }
-.employee-avatar {
+.account-avatar {
   margin: 10px;
-  color: #fff;
+  color: #0f8a43;
   box-shadow: 0px 13px 12px -7px rgba(0, 0, 0, 0.5) !important;
-}
-
-.company-avatar {
-  margin: 10px;
-  color: #77c7b4;
-  box-shadow: 0px 13px 12px -7px rgba(0, 0, 0, 0.5) !important;
-}
+} 
 
 .btn-sign-up {
   box-shadow: 0px 13px 12px -7px rgba(0, 0, 0, 0.3) !important;
 }
  
 .login-card {
-  background: #258189;
+  background: linear-gradient(to bottom, #2a2265, #453E78) !important; 
   border-radius: 6px !important;
   box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
-  border: 1px #258189 solid !important;
-  background: linear-gradient(to bottom, #1e4758, #258189);
+  border: 1px #2a2265 solid !important; 
   width: 100% !important;
   height: 100% !important;
   margin-top: 16px; 
@@ -50,18 +43,18 @@ h2 {
 .ant-btn-primary {
   margin-top: 10px;
   margin-right: 10px;
-  background-color: #cb7871 !important;
+  background-color: #faa61a !important;
   color: #fff !important;
   box-shadow: 0px 13px 12px -7px rgba(0, 0, 0, 0.3) !important;
   font-weight: bold;
-  border: solid 1px #cb7871 !important;
+  border: solid 1px #faa61a !important;
 }
 .ant-btn-default {
   margin-top: 10px;
   margin-right: 10px;
   background-color: #ffffff !important;
   box-shadow: 0px 13px 12px -7px rgba(0, 0, 0, 0.3) !important;
-  color: #cb7871 !important;
+  color: #faa61a !important;
   font-weight: bold;
-  border: solid 2px #cb7871 !important;
+  border: solid 2px #faa61a !important;
 }

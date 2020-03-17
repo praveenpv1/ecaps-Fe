@@ -1,40 +1,212 @@
 export const mockData = {
-  spend: {
-    spendsData: {
-      data: {
-        transactions: {
-          totalAmount: 0,
-          categories: [
-            {
-              type: "Shopping",
-              amount: 4899
-            },
-            {
-              type: "Travel",
-              amount: 13540
-            },
-            {
-              type: "Entertainment",
-              amount: 680
-            },
-            {
-              type: "Food",
-              amount: 1575
-            },
-            {
-              type: "ATM Money",
-              amount: 3000
-            }
-          ]
-        }
-      }
+  distirbutorList: [
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
     }
-  },
-  pot: {
-    createData: {
-      data: {
-        _id: 10001
-      }
+  ],
+  subDistirbutorList: [
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
     }
-  }
+  ],
+  retailerList: [
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    },
+    {
+      _id: "5e61deb2b03b6dc7ebc8c38e",
+      kyc: [],
+      first_name: "John",
+      last_name: "Doe",
+      gender: "male",
+      email: "YN111XI2@gmail.com",
+      mobile: "+919800307794",
+      company: "5e300e66090b676b35b87f21",
+      user: {
+        _id: "5e61deb2b03b6dbf0ac8c38d",
+        email_verification: "pending_approval",
+        phone_verification: "pending_approval"
+      },
+      entityId: "5e61deb2b03b6dc7ebc8c38e",
+      __v: 0
+    }
+  ]
 };

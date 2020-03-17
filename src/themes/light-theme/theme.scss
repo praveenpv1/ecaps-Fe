@@ -1,5 +1,4 @@
 @import "~@angular/material/theming";
-
 @import "../fonts";
 @import "../icons";
 @import "../../../projects/utils/src/lib/angular-material/mat-variables";
@@ -165,45 +164,45 @@ p {
 }
 
 .white-gradient-card h1 {
-  color: #3a2f2f;
+  color: #2a2265;
 }
 
 .white-gradient-card span {
-  color: #3a2f2f;
+  color: #2a2265;
   font-weight: bold;
 }
 
 .white-gradient-card i {
   background: #ffffff;
-  color: #3a2f2f !important;
+  color: #2a2265 !important;
   display: inline-block;
   text-align: center;
   font-size: 13px;
   position: relative;
   padding: 5px;
-  border: 1px solid #3a2f2f;
+  border: 1px solid #2a2265;
   border-radius: 50%;
 }
 
-.koppr-account-balance { 
-  background: linear-gradient(to bottom, #2193b0, #6dd5ed) !important; 
+.enviar-account-balance { 
+  background: linear-gradient(to bottom, #2a2265, #453E78) !important; 
   color: #ffffff !important;
-  border: #2193b0 !important;
+  border: #2a2265 !important;
 }
 
-.koppr-account-balance h1 {
+.enviar-account-balance h1 {
   color: #ffffff;
 }
-.koppr-account-balance p {
+.enviar-account-balance p {
   color: #ffffff;
 }
-.koppr-account-balance span {
+.enviar-account-balance span {
   color: #ffffff;
   font-weight: bold;
 }
 
-.koppr-account-balance i {
-  background-image: linear-gradient(321deg, #cb7871 36%, #f2a17e 89%);
+.enviar-account-balance i { 
+  background-image: linear-gradient(321deg, #faa61a 36%, #fbbc53 89%);
   text-align: center;
   display: inline-block;
   font-size: 17px;
@@ -222,9 +221,9 @@ p {
 
 .ant-layout-header {
   margin-bottom: 15px;
-  -webkit-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
-  -moz-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
-  box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
+  -webkit-box-shadow: 2px 3px 8px -1px rgba(42, 34, 101, 1);
+  -moz-box-shadow: 2px 3px 8px -1px rgba(42, 34, 101, 1);
+  box-shadow: 2px 3px 8px -1px rgba(42, 34, 101, 1);
 }
 
 .header-menu {
@@ -236,9 +235,9 @@ p {
 }
 
 .sider-menu {
-  -webkit-box-shadow: 2px 3px 8px -1px rgb(65, 106, 168, 1);
-  -moz-box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1);
-  box-shadow: 2px 3px 8px -1px rgba(65, 106, 168, 1) !important;
+  -webkit-box-shadow: 2px 3px 8px -1px rgb(42, 34, 101, 1);
+  -moz-box-shadow: 2px 3px 8px -1px rgba(42, 34, 101, 1);
+  box-shadow: 2px 3px 8px -1px rgba(42, 34, 101, 1) !important;
   margin-top: -15px !important;
 }
 
@@ -247,14 +246,14 @@ p {
   padding-right: 5px !important;
 }
 
-.employer-card {
+.blue-border-card {
   border-radius: 6px !important;
   -webkit-box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   margin: 10px !important;
   margin-left: 0px !important;
-  border: 1px #2193b0 solid !important;
+  border: 1px #2a2265 solid !important;
   outline: none !important;
 }
 .warning-card {
@@ -264,7 +263,7 @@ p {
   box-shadow: 0px 36px 45px -29px rgba(0, 0, 0, 0.63);
   margin: 10px !important;
   margin-left: 0px !important;
-  border: 1px #cb7871 solid !important;
+  border: 1px #ed1c24 solid !important;
 }
 .ant-table-scroll {
   border-radius: 6px;
@@ -283,7 +282,7 @@ p {
 
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
   color: white !important;
-  background-color: #27878e !important;
+  background-color: #453E78 !important;
 }
 
 .sider-menu li {
@@ -292,10 +291,10 @@ p {
 }
 
 .ant-btn-primary {
-  background-color: #27878e !important;
+  background-color: #453E78 !important;
   color: #ffffff !important;
-  border: #27878e !important;
-  box-shadow: 0px 13px 12px -7px rgba(209, 255, 244, 2.5) !important;
+  border: #453E78 !important;
+  box-shadow: 0px 13px 12px -7px rgba(42, 34, 101, 2.5) !important;
 }
 
 .ant-btn-primary-disabled,
@@ -317,8 +316,8 @@ p {
 }
 .ant-btn-info {
   background-color: #ffffff !important;
-  border: solid 1px #77c7b4 !important;
-  color: #27878e !important;
+  border: solid 1px #453E78 !important;
+  color: #453E78 !important;
 }
 .ant-btn-info-disabled,
 .ant-btn-info.disabled,
@@ -339,7 +338,7 @@ p {
 }
 
 .table-btn {
-  color: #27878e !important;
+  color: #453E78 !important;
   font-weight: bold !important;
   background: none !important;
   background-color: Transparent !important;
@@ -351,7 +350,7 @@ p {
 }
 
 .green-shade {
-  color: #27878e;
+  color: #2a2265;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -373,7 +372,7 @@ p {
   font-style: normal;
   line-height: 1.8;
   letter-spacing: normal;
-  color: #27878e;
+  color: #2a2265;
   cursor: pointer;
 }
 .back-img {
@@ -387,30 +386,30 @@ p {
   object-fit: contain;
 }
 
-.koppr-light-green,
-.koppr-light-green a {
+.light-blue,
+.light-blue a {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #77c7b4;
+  color: #7A759F;
 }
-.koppr-medium-green {
+.medium-blue {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #27878e;
+  color: #453E78;
 }
-.koppr-dark-green {
+.dark-blue {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #1e4758;
+  color: #2a2265;
 }
 
 nz-select {
