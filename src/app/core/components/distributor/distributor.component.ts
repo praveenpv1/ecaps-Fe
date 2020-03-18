@@ -9,84 +9,84 @@ import { isThisMonth } from "date-fns";
 import { mockData } from "@app/core/services/mock.service";
 
 export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-  category: string;
-  route: string;
-  icon: string;
+    color: string;
+    cols: number;
+    rows: number;
+    text: string;
+    category: string;
+    route: string;
+    icon: string;
 }
 
 enum InfoType {
-  amount = 1,
-  info = 2
+    amount = 1,
+    info = 2
 }
 
 interface Employees {
-  id: number;
-  name: string;
-  designation: string;
-  department: string;
+    id: number;
+    name: string;
+    designation: string;
+    department: string;
 }
 
 @Component({
-  selector: "app-distributor",
-  templateUrl: "./distributor.component.html",
-  styleUrls: ["./distributor.component.scss"]
+    selector: "app-distributor",
+    templateUrl: "./distributor.component.html",
+    styleUrls: ["./distributor.component.scss"]
 })
 export class DistributorComponent implements OnInit {
-  employeesList: any;
-  selectedValue = "Sort";
-  searchText = "";
-  initialState: any = "";
-  constructor(
-    private er: EmployeeReducers,
-    private ds: DataStore,
-    private route: Router
-  ) {
-    this.initialState = ds.dataStore$.getValue();
-  }
+    employeesList: any;
+    selectedValue = "Sort";
+    searchText = "";
+    initialState: any = "";
+    constructor(
+        private er: EmployeeReducers,
+        private ds: DataStore,
+        private route: Router
+    ) {
+        this.initialState = ds.dataStore$.getValue();
+    }
 
-  ngOnInit() {
-    this.er.cardReducer({
-      type: GET_EMPLOYEES,
-      payload: {
-        company: `${this.initialState.company_id}`
-      }
-    });
+    ngOnInit() {
+        // this.er.cardReducer({
+        //   type: GET_EMPLOYEES,
+        //   payload: {
+        //     company: `${this.initialState.company_id}`
+        //   }
+        // });
 
-    this.employeesList = mockData.distirbutorList;
+        this.employeesList = mockData.distirbutorList;
 
-    // this.ds.dataStore$.subscribe(data => {
-    //   let employeeResponse = _.get(data.employees.details, "data", null);
-    //   if (employeeResponse) {
-    //     this.employeesList = _.get(data.employees.details, "data", []);
+        // this.ds.dataStore$.subscribe(data => {
+        //   let employeeResponse = _.get(data.employees.details, "data", null);
+        //   if (employeeResponse) {
+        //     this.employeesList = _.get(data.employees.details, "data", []);
+        //   }
+
+        //   // data.employee.details.array.forEach(element => {
+        //   //   this.employeesList.push({
+        //   //     id: element._id,
+        //   //     name: element.firstName + " " + element.lastName,
+        //   //     designation: "Adminstrator",
+        //   //     department: "IT"
+        //   //   });
+        //   // });
+        // });
+    }
+    // editRoute(data: any): void {
+    //   if (data._id) {
+    //     this.route.navigate(["/", "employee", "add", data.user._id, data._id]);
     //   }
-
-    //   // data.employee.details.array.forEach(element => {
-    //   //   this.employeesList.push({
-    //   //     id: element._id,
-    //   //     name: element.firstName + " " + element.lastName,
-    //   //     designation: "Adminstrator",
-    //   //     department: "IT"
-    //   //   });
-    //   // });
-    // });
-  }
-  editRoute(data: any): void {
-    if (data._id) {
-      this.route.navigate(["/", "employee", "add", data.user._id, data._id]);
-    }
-  }
-  resendVerification(data: any): void {
-    if (data._id) {
-      this.er.cardReducer({
-        type: SEND_VERIFICATION,
-        payload: {
-          employee_id: data._id
-        }
-      });
-    }
-  }
+    // }
+    // resendVerification(data: any): void {
+    //   if (data._id) {
+    //     this.er.cardReducer({
+    //       type: SEND_VERIFICATION,
+    //       payload: {
+    //         employee_id: data._id
+    //       }
+    //     });
+    //   }
+    // }
 }
