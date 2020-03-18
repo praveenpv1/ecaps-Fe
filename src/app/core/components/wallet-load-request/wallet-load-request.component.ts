@@ -252,4 +252,82 @@ export class WalletLoadRequestComponent implements OnInit, OnDestroy {
         //   payload: { txnid: id, approval_status: "disapproved" }
         // });
     }
+  ngOnInit() {
+    this.showCompanyWallet();
+
+    //get all employees
+    this.eR.cardReducer({
+      type: GET_EMPLOYEES,
+      payload: {}
+    });
+
+    this.cR.cardReducer({
+      type: GET_CLAIMS_TXNS,
+      payload: {}
+    });
+  }
+  
+  renderCards(): void {
+    this.balanceCards = [];
+    this.mockCards = [
+      {
+        title: "Pending Requests",
+        text: this.pendingClaims + " requests",
+        icon: "more",
+        bgClass: "white-bg-card",
+        desc: "VIEW DETAILS",
+        routerLink: ["/", "claims"],
+        type: InfoType.info,
+        showDetail: false
+      },
+      {
+        title: "Approved Requests",
+        text: this.approvedCounts + " requests",
+        icon: "more",
+        bgClass: "white-bg-card",
+        desc: "VIEW DETAILS",
+        routerLink: ["/", "claims"],
+        type: InfoType.info,
+        showDetail: false
+      },
+      {
+        title: "Requests Settled",
+        text: this.currencyPipe.transform(this.settledClaims, "₹"),
+        icon: "more",
+        bgClass: "white-bg-card",
+        desc: "VIEW DETAILS",
+        routerLink: ["/", "claims"],
+        type: InfoType.amount,
+        showDetail: false
+      }
+    ];
+
+    this.balanceCards.push(...this.mockCards, {
+      title: "Enviar Account Balance",
+      text: this.currencyPipe.transform(this.companyBalance, "₹"),
+      icon: "more",
+      bgClass: "enviar-account-balance",
+      desc: "TOP UP",
+      routerLink: ["/", "company", "deposit"],
+      type: InfoType.amount,
+      showDetail: true
+    });
+  }
+
+  getStatusText(status: string): string {
+    return getStatusText(status);
+  }
+  approveClaims(id: string): void {
+    this.cR.cardReducer({
+      type: UPDATE_COMPANY_TXNS,
+      payload: { txnid: id, approval_status: "internally_approved" }
+    });
+  }
+
+  rejectClaims(id: string): void {
+    this.cR.cardReducer({
+      type: UPDATE_COMPANY_TXNS,
+      payload: { txnid: id, approval_status: "disapproved" }
+    });
+  }
 }

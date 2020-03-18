@@ -228,7 +228,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
           "₹"
         ),
         icon: "more",
-        bgClass: "white-gradient-card",
+        bgClass: "white-bg-card",
         desc: "VIEW DETAILS",
         routerLink: ["/", "salary"],
         type: InfoType.amount
@@ -237,7 +237,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         title: "Earnings",
         text: this.currencyPipe.transform(this.settledClaims, "₹"),
         icon: "more",
-        bgClass: "white-gradient-card",
+        bgClass: "white-bg-card",
         desc: "VIEW DETAILS",
         routerLink: ["/", "claims"],
         type: InfoType.amount
@@ -249,7 +249,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
           "₹"
         ),
         icon: "more",
-        bgClass: "white-gradient-card",
+        bgClass: "white-bg-card",
         desc: "VIEW DETAILS",
         routerLink: ["/", "allowance"],
         type: InfoType.amount
@@ -261,7 +261,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         title: "Auto Wallet Loading in",
         text: SalaryIn(),
         icon: "more",
-        bgClass: "white-gradient-card",
+        bgClass: "white-bg-card",
         desc: "VIEW DETAILS",
         routerLink: ["/", "salary"],
         type: InfoType.info,
@@ -271,7 +271,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         title: "Pending Transactions",
         text: this.pendingClaims + "Txns",
         icon: "more",
-        bgClass: "white-gradient-card",
+        bgClass: "white-bg-card",
         desc: "VIEW DETAILS",
         routerLink: ["/", "claims"],
         type: InfoType.info,
