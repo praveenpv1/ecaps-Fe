@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ledgers',
@@ -12,4 +12,3 @@ export class LedgersComponent implements OnInit {
   ngOnInit() {
   }
 }
-
