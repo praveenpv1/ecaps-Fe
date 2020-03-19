@@ -3,25 +3,43 @@
  */
 
 $themes: (
-    light: (
-        backgroundColor: white,
-        textColor: #408bbd,
-        buttonTextColor: #408bbd,
-        buttonTextTransform: none,
-        buttonTextHoverColor: #61b0e7,
-        buttonColor: #fff,
-        buttonBorder: 2px solid #408bbd,
-        gradientColor: linear-gradient(to bottom, #2a2265, #453e78)
+    enviar: ( 
+        gradientColor: linear-gradient(to bottom, #2a2265, #453e78),
+        primaryColorBorder: 1px #2a2265 solid,
+        primaryColor: #2a2265,
+        mediumColor: #453e78,
+        lightColor: #7a759f,
+        layoutShadow: 2px 3px 8px -1px rgba(42, 34, 101, 1),
+        buttonShadow: 0px 13px 12px -7px rgba(42, 34, 101, 2.5)
+
     ),
-    dark: (
-        backgroundColor: #222,
-        textColor: #ddd,
-        buttonTextColor: #aaa,
-        buttonTextTransform: uppercase,
-        buttonTextHoverColor: #ddd,
-        buttonColor: #333,
-        buttonBorder: 1px solid #333,
-        gradientColor: linear-gradient(to bottom, #dec81d, #e4d030)
+    gold: (
+        gradientColor: linear-gradient(to bottom, #af9500, #c9b037),
+        primaryColorBorder: 1px #af9500 solid,
+        primaryColor: #af9500,
+        mediumColor: #b9a220,
+        lightColor: #cdbd60,
+        layoutShadow: 2px 3px 8px -1px rgba(175, 149, 0, 1),
+        buttonShadow: 0px 13px 12px -7px rgba(175, 149, 0, 2.5)
+
+    ),
+    silver: (
+        gradientColor: linear-gradient(to bottom, #b4b4b4, #d7d7d7),
+        primaryColorBorder: 1px #b4b4b4 solid,
+        primaryColor: #b4b4b4,
+        mediumColor: #BdBdBd,
+        lightColor: #d0d0d0,
+        layoutShadow: 2px 3px 8px -1px rgba(215, 215, 215, 1),
+        buttonShadow: 0px 13px 12px -7px rgba(215, 215, 215, 2.5)
+    ),
+    bronze: (
+        gradientColor: linear-gradient(to bottom, #6a3805, #ad8a56),
+        primaryColorBorder: 1px #6a3805 solid,
+        primaryColor: #6a3805,
+        mediumColor: #7d5124,
+        lightColor: #a28363,
+        layoutShadow: 2px 3px 8px -1px rgba(106, 56, 5, 1),
+        buttonShadow: 0px 13px 12px -7px rgba(106, 56, 5, 2.5)
     )
 );
 
