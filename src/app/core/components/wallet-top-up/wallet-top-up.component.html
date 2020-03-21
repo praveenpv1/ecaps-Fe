@@ -1,12 +1,12 @@
 <div nz-row>
     <div nz-col nzSm="24" nzMd="24" nzLg="24" nzXl="24">
-      <h3 class="dark-blue">Top Up Balance</h3>
-      <p>Topup your Enviar Account balance.</p>
+      <h3 class="dark-blue">Value Transfer</h3>
+      <p>Transfer Values To The Retailer.</p>
     </div>
     <br />
     <br />
     <br />
-  
+
     <div nz-col nzSm="24" nzMd="24" nzLg="24" nzXl="24">
       <nz-tabset
         [nzTabPosition]="'top'"
@@ -15,44 +15,25 @@
         (nzSelectedIndexChange)="tabChange($event)"
       >
         <nz-tab *ngFor="let tab of tabs" [nzTitle]="tab">
-          <div *ngIf="tab == 'Online Top Up' && !isAdminRole">
+          <div *ngIf="tab == 'Transfer Value' && !isAdminRole">
             <div nzSm="24" nzMd="24" nzLg="24" nzXl="24">
-              <br />
-              <h3 class="dark-blue">
-                Online Transfer
-              </h3>
-              <form
-                nz-form
-                [formGroup]="validateOnlineForm"
-                (ngSubmit)="submitOnlineForm()"
-              >
-                <nz-form-item>
-                  <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="Amount"
-                    >Transfer Amount</nz-form-label
-                  >
-                  <nz-form-control
-                    [nzSm]="14"
-                    [nzXs]="24"
-                    nzErrorTip="Please enter the amount."
-                  >
-                    <input
-                      type="number"
-                      nz-input
-                      formControlName="onlineAmount"
-                      id="onlineAmount"
-                    />
-                  </nz-form-control>
-                </nz-form-item>
-  
-                <nz-form-item nz-row class="register-area">
-                  <nz-form-control [nzSpan]="14" [nzOffset]="6">
-                    <button nz-button nzType="primary">
-                      Pay Online
-                    </button>
-                  </nz-form-control>
-                </nz-form-item>
-              </form>
-              <br /><br />
+              <div nz-col nzSm="24" nzMd="24" nzLg="8" nzXl="8"><h5>Choose Retailer</h5>
+<mat-form-field>
+  <mat-label>Choose Retailer</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let Retailer of Retailers" [value]="Retailer.value">
+      {{Retailer.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field></div>
+              <div nz-col nzSm="24" nzMd="24" nzLg="8" nzXl="8"><form class="example-form">
+                <h5>Amount</h5>
+  <mat-form-field class="example-full-width">
+
+    <input matInput placeholder="100" value="100">
+  </mat-form-field>
+</form></div>
+              <div nz-col nzSm="24" nzMd="24" nzLg="8" nzXl="8"><br><br><button>Submit</button></div>
             </div>
           </div>
           <div *ngIf="tab == 'Manual Top Up' && !isAdminRole">
@@ -97,7 +78,7 @@
                     />
                   </nz-form-control>
                 </nz-form-item>
-  
+
                 <nz-form-item>
                   <nz-form-label
                     [nzSm]="6"
@@ -106,7 +87,7 @@
                     nzRequired
                     >Transaction Type</nz-form-label
                   >
-  
+
                   <nz-form-control
                     [nzSm]="14"
                     [nzXs]="24"
@@ -127,7 +108,7 @@
                     </nz-select>
                   </nz-form-control>
                 </nz-form-item>
-  
+
                 <nz-form-item>
                   <nz-form-label
                     [nzSm]="6"
@@ -159,38 +140,78 @@
               </form>
             </div>
           </div>
-          <div *ngIf="tab == 'Transactions'">
+          <div *ngIf="tab == 'Transfer By Number'">
+            <div nzSm="24" nzMd="24" nzLg="24" nzXl="24">
+              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
+                <h5>Enter Number or UserID</h5>
+  <mat-form-field class="example-full-width">
+
+    <input matInput placeholder="xxxxxxxxx" value="">
+  </mat-form-field>
+</form></div>
+              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
+                <h5>Amount</h5>
+  <mat-form-field class="example-full-width">
+
+    <input matInput placeholder="100" value="100">
+  </mat-form-field>
+</form></div>
+              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><h5>Type</h5>
+<mat-form-field>
+  <mat-label>Forward</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let Retailer of Retailers" [value]="Retailer.value">
+      {{Retailer.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field></div>
+              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
+                <h5>Remarks</h5>
+  <mat-form-field class="example-full-width">
+
+    <input matInput placeholder="..........." value="">
+  </mat-form-field>
+</form><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Submit</button></div>
+            </div>
+          </div>
+          <div *ngIf="tab == 'Request Value' && !isAdminRole">
             <div nzSm="24" nzMd="24" nzLg="24" nzXl="24">
               <br />
               <h3 class="dark-blue">
-                Recent Transaction
+                Online Transfer
               </h3>
-              <br />
-              <nz-table
-                #headerTable
-                [nzData]="companyTranscations"
-                [nzPageSize]="50"
-                [nzScroll]="{ y: '240px' }"
+              <form
+                nz-form
+                [formGroup]="validateOnlineForm"
+                (ngSubmit)="submitOnlineForm()"
               >
-                <thead>
-                  <tr>
-                    <th nzWidth="150px">Date</th>
-                    <th>Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let data of headerTable.data">
-                    <td>
-                      {{ data.initiated_ts * 1000 | date: "yyyy-MM-dd" }}
-                    </td>
-                    <td>
-                      Txn Id: {{ data.details.transaction_id }},
-                      {{ getStatusText(data.approval_status) }}, Amount -
-                      {{ data.amount | currency: "₹" }}
-                    </td>
-                  </tr>
-                </tbody>
-              </nz-table>
+                <nz-form-item>
+                  <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="Amount"
+                    >Transfer Amount</nz-form-label
+                  >
+                  <nz-form-control
+                    [nzSm]="14"
+                    [nzXs]="24"
+                    nzErrorTip="Please enter the amount."
+                  >
+                    <input
+                      type="number"
+                      nz-input
+                      formControlName="onlineAmount"
+                      id="onlineAmount"
+                    />
+                  </nz-form-control>
+                </nz-form-item>
+
+                <nz-form-item nz-row class="register-area">
+                  <nz-form-control [nzSpan]="14" [nzOffset]="6">
+                    <button nz-button nzType="primary">
+                      Pay Online
+                    </button>
+                  </nz-form-control>
+                </nz-form-item>
+              </form>
+              <br /><br />
             </div>
           </div>
         </nz-tab>
@@ -199,4 +220,3 @@
     <br />
     <br />
   </div>
-  
