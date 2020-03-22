@@ -32,18 +32,7 @@
         [ngClass]="item.bgClass"
       >
         <p>{{ item.title }}</p>
-        <div nz-row>
-          <div nz-col nzXl="7">
-            <li>
-              <img src="{{ item.iconImg }}" />
-            </li>
-          </div>
-          <div nz-col nzXl="17">
-            <h2 class="primary-color-h2 card-h2">
-              {{ item.text }}
-            </h2>
-          </div>
-        </div>
+        <h1>{{ item.text }}</h1> 
         <p>
           <span>
             {{ item.desc }}
