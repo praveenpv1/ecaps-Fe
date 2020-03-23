@@ -142,76 +142,15 @@
           </div>
           <div *ngIf="tab == 'Transfer By Number'">
             <div nzSm="24" nzMd="24" nzLg="24" nzXl="24">
-              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
-                <h5>Enter Number or UserID</h5>
-  <mat-form-field class="example-full-width">
+              
 
-    <input matInput placeholder="xxxxxxxxx" value="">
-  </mat-form-field>
-</form></div>
-              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
-                <h5>Amount</h5>
-  <mat-form-field class="example-full-width">
+              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6">hff</div>
+                <div nz-col nzSm="24" nzMd="24" nzLg="4" nzXl="4">gyh</div>
+                <div nz-col nzSm="24" nzMd="24" nzLg="4" nzXl="4">dd</div>
+                <div nz-col nzSm="24" nzMd="24" nzLg="4" nzXl="4">fg</div>
+                <div nz-col nzSm="24" nzMd="24" nzLg="4" nzXl="4">fg</div>
 
-    <input matInput placeholder="100" value="100">
-  </mat-form-field>
-</form></div>
-              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><h5>Type</h5>
-<mat-form-field>
-  <mat-label>Forward</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let Retailer of Retailers" [value]="Retailer.value">
-      {{Retailer.viewValue}}
-    </mat-option>
-  </mat-select>
-</mat-form-field></div>
-              <div nz-col nzSm="24" nzMd="24" nzLg="6" nzXl="6"><form class="example-form">
-                <h5>Remarks</h5>
-  <mat-form-field class="example-full-width">
 
-    <input matInput placeholder="..........." value="">
-  </mat-form-field>
-</form><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Submit</button></div>
-            </div>
-          </div>
-          <div *ngIf="tab == 'Request Value' && !isAdminRole">
-            <div nzSm="24" nzMd="24" nzLg="24" nzXl="24">
-              <br />
-              <h3 class="dark-blue">
-                Online Transfer
-              </h3>
-              <form
-                nz-form
-                [formGroup]="validateOnlineForm"
-                (ngSubmit)="submitOnlineForm()"
-              >
-                <nz-form-item>
-                  <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="Amount"
-                    >Transfer Amount</nz-form-label
-                  >
-                  <nz-form-control
-                    [nzSm]="14"
-                    [nzXs]="24"
-                    nzErrorTip="Please enter the amount."
-                  >
-                    <input
-                      type="number"
-                      nz-input
-                      formControlName="onlineAmount"
-                      id="onlineAmount"
-                    />
-                  </nz-form-control>
-                </nz-form-item>
-
-                <nz-form-item nz-row class="register-area">
-                  <nz-form-control [nzSpan]="14" [nzOffset]="6">
-                    <button nz-button nzType="primary">
-                      Pay Online
-                    </button>
-                  </nz-form-control>
-                </nz-form-item>
-              </form>
-              <br /><br />
             </div>
           </div>
         </nz-tab>
