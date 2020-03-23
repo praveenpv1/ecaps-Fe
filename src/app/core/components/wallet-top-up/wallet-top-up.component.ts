@@ -33,7 +33,12 @@ import { environment } from "@env/environment";
     styleUrls: ["./wallet-top-up.component.scss"]
 })
 export class WalletTopUpComponent implements OnInit, OnDestroy {
-    tabs = ["Online Top Up", "Transactions"];
+  Retailers: Retailer[] = [
+   {value: 'Retailer-0', viewValue: 'Retailer1'},
+   {value: 'Retailer-1', viewValue: 'Retailer2'},
+   {value: 'Retailer-2', viewValue: 'Retailer3'},
+ ];
+    tabs = ["Transfer Value", "Transfer By Number","Request Value"];
     validateForm: FormGroup;
     validateOnlineForm: FormGroup;
     selectedTransType = "neft";
